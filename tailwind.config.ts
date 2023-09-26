@@ -9,6 +9,15 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    extend: {
+      backgroundImage: {
+        galaxy1: "url('/resource/group1.png')",
+        galaxy2: "url('/resource/group2.png')",
+        galaxy3: "url('/resource/group3.png')",
+        galaxy4: "url('/resource/group4.png')",
+        'cloudy-night': "url('/resource/cloudy_night1.png')",
+      },
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -20,6 +29,8 @@ const config: Config = {
       yellow: colors.yellow,
       pink: colors.pink,
       green: colors.green,
+      purple: colors.purple,
+      blue: colors.blue,
       t1: {
         5: '#ECEE81',
       },

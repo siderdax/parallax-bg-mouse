@@ -1,11 +1,5 @@
 'use client'
-
-import Image from 'next/image'
 import { useEffect } from 'react'
-import galaxy1 from '../resource/group1.png'
-import galaxy2 from '../resource/group2.png'
-import galaxy3 from '../resource/group3.png'
-import galaxy4 from '../resource/group4.png'
 
 export default function Home() {
   useEffect(() => {
@@ -22,29 +16,32 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="flex h-full bg-gradient-to-b from-black to-indigo-900">
-      <Image
-        className="galaxy"
-        src={galaxy1}
-        data-value="-2"
-        alt="star1"
-        fill
+    <>
+      <section
+        className='to-purple-800 to-100%" absolute h-full
+        w-full bg-gradient-to-b from-black from-50% via-indigo-900 via-90%'
       />
-      <Image className="galaxy" src={galaxy2} data-value="1" alt="star2" fill />
-      <Image
-        className="galaxy"
-        src={galaxy3}
+      <section
+        className="galaxy bg-galaxy1 absolute h-full w-full bg-auto"
+        data-value="-5"
+      />
+      <section
+        className="galaxy bg-galaxy2 absolute h-full w-full bg-auto"
+        data-value="-1"
+      />
+      <section
+        className="galaxy bg-galaxy3 absolute h-full w-full bg-auto"
         data-value="-3"
-        alt="star3"
-        fill
       />
-      <Image
-        className="galaxy"
-        src={galaxy4}
-        data-value="2 "
-        alt="star4"
-        fill
+      <section
+        className="galaxy bg-galaxy4 absolute h-full w-full bg-auto"
+        data-value="-9"
       />
-    </main>
+      <main className="absolute flex h-full w-full items-center justify-center overflow-y-auto">
+        <div className="flex h-[4100px] items-center font-serif text-lg font-semibold text-white">
+          Galaxy
+        </div>
+      </main>
+    </>
   )
 }
