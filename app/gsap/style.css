@@ -1,0 +1,55 @@
+body {
+  background-color: #a62e91;
+  color: white;
+}
+
+.container {
+  font-family: var(--cp-font-family);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--cp-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  touch-action: manipulation;
+  padding-bottom: 0;
+}
+
+.header-section {
+  padding-bottom: 50vh;
+}
+.shoe {
+  position: relative;
+  padding: 20px;
+}
+.piece:not(.outsole) {
+  position: absolute;
+  bottom: 7vw;
+}
+.midsole {
+  width: 89%;
+  left: 5%;
+}
+.heel {
+  width: 41.8013857%;
+  left: 6%;
+}
+.outsole {
+  width: 100%;
+  position: relative;
+}
+
+h1,
+h2,
+p,
+li {
+  max-width: none;
+}
